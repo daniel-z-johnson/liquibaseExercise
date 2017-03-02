@@ -4,6 +4,11 @@
       "include": {
         "file" : "db/changelog/V1_00__users.json"
       }
+    },
+    {
+      "include": {
+        "file" : "db/changelog/V1_01__entries.json"
+      }
     }
   ]
 }
