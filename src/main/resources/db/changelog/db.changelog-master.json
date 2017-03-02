@@ -1,43 +1,8 @@
 {
   "databaseChangeLog" : [
     {
-      "changeSet" : {
-        "id" : 1,
-        "author" : "prime23",
-        "changes" : [
-          {
-            "createTable": {
-              "tableName" : "users",
-              "columns" : [
-                {
-                  "column": {
-                    "name" : "id",
-                    "type" : "long",
-                    "autoIncrement" : true,
-                    "constraints" : {
-                      "primaryKey" : true,
-                      "nullable" : false
-                    }
-                  }
-                },
-                {
-                  "column" : {
-                    "name" : "name",
-                    "type" : "varchar(255)",
-                    "constraints" : {"nullable" : false}
-                  }
-                },
-                {
-                  "column" : {
-                    "name" : "email",
-                    "type" : "varchar(255)",
-                    "constraints" : {"nullable" : false}
-                  }
-                }
-              ]
-            }
-          }
-        ]
+      "include": {
+        "file" : "db/changelog/V1_00__users.json"
       }
     }
   ]
